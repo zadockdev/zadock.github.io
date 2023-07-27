@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadock/portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/597ee881e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+                <nav>
+                    <p class="logo"><span>Z</span>ADOCK.</p>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Zadock</span> <br> Oyolla </h1>
+                <p> I'm A <b><span> Frontend ' Web Developer.</span></b></p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/zadock_dev/" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/theDEVzadock1" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <a href="#contact" class="btn3">Hire Me</a>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about image.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Zadock! I’m a web developer with in-depth 
+                        experience in web apps design. In a nutshell, 
+                        I create responsive websites and web applications that help organizations address 
+                        business challenges, meet their needs and helps them ingage with there clients. I manage 
+                        everything from website navigation and layout to 
+                        a company’s web hosting. 
+                        My expertise lies within front-end web apps, and the 
+                        main languages in my tech stack are JavaScript, 
+                        and of course HTML/CSS. I’m a lifelong learner 
+                        (currently taking a course on UI/UX design and also taking a course on building AI chatbots with Python!) 
+                        and love to read, run, and find new bubble tea shops.</p>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span> <br>Designing Web Interfaces</li>
+                                <li><span>Web Development</span> <br>Web app Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span> <br>UI/UX Design Training</li>
+                                <li><span>2021 - Current</span> <br>Freelance Web App developer</li>
+                                <li><span>2020 - 2021</span> <br>Internship at easy eCommerce</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current</span> <br>Freelance Web App developer</li>
+                                <li><span>2020 - 2021</span> <br>Internship at easy eCommerce</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Are you searching for Web Design in Kenya? then search no 
+                        further. Website design and Development is our speciality.</p>
+                    <a href="webdev.html">Learn more</a>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>The UI team is tasked with the duty of coming up with a
+                        prototype, demos or design samples for the client.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web App Design</h2>
+                    <p>The revolution of hand held devices and smart phones has 
+                        resulted in a consumer base that is empowered.</p>
+                    <a href="appdev.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/company website.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p class="description">Simple and elegant company website that helps the company connect with the clients easily.</p>
+                            <a href="http://ghost2088.github.io/ghost2088" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p class="description">The app connects the talented people all over the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p class="description">The app connects the talented people all over the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping Web App</h3>
+                        <p class="description">The app connects the talented people all over the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>
+                    <button   class="email" ><a href="mailto:zadockoyolla97@gmail.com">zadockoyolla97@gmail.com</a></button>
+                    </p>
+                    <p><strong><i class="fa-solid fa-phone"></i>
+                    <button class="number"><a href="tel: +254111439335"> +254111439335</a></button></strong></p>
+                    <h1 class="sub-title">follow On</h1>
+                    <div class="social-icons">
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/zadock_dev/" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://twitter.com/theDEVzadock1" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="contact-left">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-solid fa-copyright"></i> zadock:: made by zadock</p>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+         sidemenu.style.right = "0";
+        }
+         
+        function closemenu(){
+         sidemenu.style.right = "-200px";
+        }
+     
+    </script>
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+        <script>
+            
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwy4bTDPBxq3lIUZk2tHJoDk4cb0qxS_qtJ51klLmTQafHkMFeqNtBo_9r3Guq9wZ3d/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+        </script>
+    
+    
+    
+    
+</body>
+</html>
